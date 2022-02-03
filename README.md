@@ -1,7 +1,7 @@
 # Zoomable Sunburst Visualization
 
-##Technologies
-  ###D3 Js
-  ###HTML
-  ###CSS
-  ###Javascript
+##Technologies<br>
+  ######D3 Js<br>
+  ######HTML<br>
+  ######CSS<br>
+  ######Javascript
