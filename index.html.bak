@@ -2,8 +2,7 @@
     <style>
         body {
             font-family: Sans-serif;
-            font-size: 10px;
-            font-weight: 600;
+            font-size: 11.5px;
         }
 
         .slice {
@@ -38,9 +37,9 @@
     </div>
     <div>
         <script>
-            const width = window.innerWidth+100,
-                height = window.innerHeight+100,
-                maxRadius = (Math.min(width, height) / 2) - 20;
+            const width = window.innerWidth,
+                height = window.innerHeight,
+                maxRadius = (Math.min(width, height) / 2) - 100;
 
 
             //   const formatNumber = d3.format(',d');
@@ -52,8 +51,6 @@
             const y = d3.scaleSqrt()
                 .range([maxRadius * .1, maxRadius]);
 
-            //   const y  = d3.scaleLinear().range([0, maxRadius]);
-
             const color = d3.scaleOrdinal(d3.schemeSet3);
             //const color = d3.scaleOrdinal(['gray', 'green', 'brown', 'orange']);
 
@@ -63,25 +60,22 @@
             const arc = d3.arc()
                 .startAngle(d => x(d.x0))
                 .endAngle(d => x(d.x1))
-                .innerRadius(d => d.y0 * maxRadius)
-                .outerRadius(d => Math.max(d.y0 * maxRadius, d.y1 * maxRadius - 1));
-
-
-            //.innerRadius(d => Math.max(0, y(d.y0)))
-            //     .outerRadius(d => Math.max(0, y(d.y0 + d.y1)));
+              //  .innerRadius(d => d.y0 * maxRadius)
+              //  .outerRadius(d => Math.max(d.y0 * maxRadius, d.y1 * maxRadius - 1))
+    
+        .innerRadius(d => Math.max(0, y(d.y)))
+               .outerRadius(d => Math.max(0, y(d.y + d.dy))
 
             // .innerRadius(d => Math.max(0, y(d.y0)))
-            //.outerRadius(d => Math.max(0, y(d.y1))); 
+            // .outerRadius(d => Math.max(0, y(d.y1))); 
 
 
 
 
             const middleArcLine = d => {
-                const avg = ((d.y0 * maxRadius) + Math.max(d.y0 * maxRadius, d.y1 * maxRadius - 1)) / 2;
                 const halfPi = Math.PI / 2;
                 const angles = [x(d.x0) - halfPi, x(d.x1) - halfPi];
-                const r = Math.max(0, avg);
-                //    const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
+                const r = Math.max(0, (y(d.y0) + y(d.y1)) / 2);
 
                 const middleAngle = (angles[1] + angles[0]) / 2;
                 const invertDirection = middleAngle > 0 && middleAngle < Math.PI; // On lower quadrants write text ccw
@@ -191,7 +185,7 @@
 
                 moveStackToFront(d);
 
-
+                
 
                 function moveStackToFront(elD) {
                     svg.selectAll('.slice').filter(d => d === elD)
@@ -206,15 +200,6 @@
     <br>
     <br>
     <br>
-    <div style="display: flex; justify-content: flex-end;padding-right: 50px;font-size: 15px;">
-        <p>
-            <ul>
-                <li>Click on the segment to zoom-in</li>
-                <li>Click on the center/outside to zoom-out</li>
-               
-              </ul>
-           
-        </p>
-    </div>
+
 
 </body>

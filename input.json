@@ -1,0 +1,32 @@
+{
+    "name": "1850",
+    "children": [
+        {
+            "name": "1853",
+            "children": [
+                {
+                    "name": "Charles Waddell Chesnutt",
+                    "children": [
+                        {
+                            "name": "House Behind the Cedars ",
+                            "size": 3938
+                        },
+                        {
+                            "name": "The Marrow of Tradition ",
+                            "size": 3812
+                        }
+                    ]
+                },
+                {
+                    "name": "Harriet E. Wilson",
+                    "children": [
+                        {
+                            "name": "Harriet E. Wilson",
+                            "size": 3938
+                        } 
+                    ] 
+                }
+            ]
+        }
+    ]
+}

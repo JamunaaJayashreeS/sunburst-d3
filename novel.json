@@ -1,0 +1,215 @@
+{
+    "name": "novels",
+    "children": [
+        {
+            "name": "1850",
+            "children": [
+                {
+                    "name": "1853",
+                    "children": [
+                        {
+                            "name": "William Wells Brown",
+                            "children": [
+                                {
+                                    "name": "Clotel: or, the President's Daughter",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "1859",
+                    "children": [
+                        {
+                            "name": "Martin R. Delany",
+                            "children": [
+                                {
+                                    "name": "Blake; Or, The Huts of America ",
+                                    "size": 100
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Harriet E. Wilson",
+                            "children": [
+                                {
+                                    "name": "Our Nig ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "1890",
+            "children": [
+                {
+                    "name": "1899",
+                    "children": [
+                        {
+                            "name": "Sutton E. Griggs.",
+                            "children": [
+                                {
+                                    "name": "Imperium in Imperio ",
+                                    "size": 100
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Theophilus Gould Steward",
+                            "children": [
+                                {
+                                    "name": "A Charleston Love Story of Hortense Vancross ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "1900",
+            "children": [
+                {
+                    "name": "1900",
+                    "children": [
+                        {
+                            "name": "Charles Waddell Chesnutt",
+                            "children": [
+                                {
+                                    "name": "House Behind the Cedars ",
+                                    "size": 100
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Pauline E. Hopkins",
+                            "children": [
+                                {
+                                    "name": "Contending Forces: A Romance Illustrative of Negro Life North and South ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "1901",
+                    "children": [
+                        {
+                            "name": "Charles Waddell Chesnutt",
+                            "children": [
+                                {
+                                    "name": "The Marrow of Tradition",
+                                    "size": 100
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Paul Laurence Dunbar ",
+                            "children": [
+                                {
+                                    "name": "The Fanatics ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "1902",
+                    "children": [
+                        {
+                            "name": "Paul Laurence Dunbar ",
+                            "children": [
+                                {
+                                    "name": "The Sport of the Gods ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "1905",
+                    "children": [
+                        {
+                            "name": "Sutton E. Griggs.",
+                            "children": [
+                                {
+                                    "name": "The Hindered Hand or, The Reign of the Repressionist ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "1910",
+            "children": [
+                {
+                    "name": "1911",
+                    "children": [
+                        {
+                            "name": "W.E.B. DuBois",
+                            "children": [
+                                {
+                                    "name": "The Quest of the Silver Fleece ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "1912",
+                    "children": [
+                        {
+                            "name": "James Weldon Johnson",
+                            "children": [
+                                {
+                                    "name": "The Autobiography of an Ex-Colored Man ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "1913",
+                    "children": [
+                        {
+                            "name": "Oscar Micheaux ",
+                            "children": [
+                                {
+                                    "name": "Conquest: The Story of A Negro Pioneer ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "1918",
+                    "children": [
+                        {
+                            "name": "Sarah Lee Brown Fleming",
+                            "children": [
+                                {
+                                    "name": "Hopes Highway ",
+                                    "size": 100
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
