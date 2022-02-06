@@ -108,9 +108,9 @@
                 .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
                 .on('click', () => focusOn()); // Reset zoom on canvas click
 
-
-
-            d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/Novels%20w%20gender.json', (error, root) => {
+                d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/without%20size.json', (error, root) => {
+         //       d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/Novels%20w%20gender.json', (error, root) => {
+         //   d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/final.json', (error, root) => {
                 if (error) throw error;
 
                 var root = d3.hierarchy(root, function (d) { return d.children }).sum(function (d) {
@@ -133,10 +133,16 @@
                     });
 
                 newSlice.append('title')
-                    .text(d => d.data.name + '\n' + d.value + " novels");
-
-
-                // .text(d => d.data.name + Object.values(d).forEach(prop => console.log(prop)));
+                .text(function(d) { if(d.height==0)
+                {
+                    return 'Author: '+ d.data.name  ;
+                }
+                else if(d.height==1){
+                    return 'Novel: '+d.data.name;
+                }
+                    return d.data.name + '\n' + d.value + " novels";
+                });
+                
 
                 newSlice.append('path')
                     .attr('class', 'main-arc')
