@@ -84,8 +84,8 @@
             .attr('viewBox', `${-width / 2} ${-height / 2} ${width} ${height}`)
             .on('click', () => focusOn()); // Reset zoom on canvas click
 
-
-        d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/final.json',(error,root)=>{  
+  d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/without%20size.json', (error, root) => {
+     //   d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/final.json',(error,root)=>{  
      //   d3.json('https://raw.githubusercontent.com/JamunaaJayashreeS/JamunaaJayashreeS/master/Novels%20w%20gender.json', (error, root) => {
             if (error) throw error;
 
