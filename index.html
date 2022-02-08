@@ -30,6 +30,19 @@
     <script src='https://cdn.jsdelivr.net/npm/d3-scale-chromatic@3'></script>
 </head>
 <body>
+    <div >
+        <p style="text-align: center;font-size: 30px;font-weight: 100;">Novels by Years</p>
+    </div>
+    <div style="display: flex; justify-content: flex-end;padding-right: 50px;font-size: 15px;font-weight: 100;">
+        <p>
+            <ul>
+                <li>Click on the segment to zoom-in</li>
+                <li>Click on the center/outside to zoom-out</li>
+               
+              </ul>
+           
+        </p>
+    </div>
     <script>
         const width = window.innerWidth,
             height = window.innerHeight,
@@ -44,7 +57,7 @@
         const y = d3.scaleSqrt()
             .range([maxRadius*.1, maxRadius]);
 
-        const color = d3.scaleOrdinal(d3.schemeSet3);
+        const color = d3.scaleOrdinal(d3.schemeCategory20c);
 
         const partition = d3.partition();
 
