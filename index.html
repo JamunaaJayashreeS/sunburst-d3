@@ -121,7 +121,15 @@ if(d.children) { return 0 } else { return 1 } });
                 });
 
             newSlice.append('title')
-                .text(d => d.data.name + '\n'+"Count of novels: " +d.value);
+                .text(function(d) { if(d.height==0)
+                {
+                    return 'Author: '+ d.data.name  ;
+                }
+                else if(d.height==1){
+                    return 'Novel: '+d.data.name;
+                }
+                    return d.data.name + '\n' + d.value + " novels";
+                });
                 
                // .text(d => d.data.name + Object.values(d).forEach(prop => console.log(prop)));
 
