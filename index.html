@@ -132,7 +132,7 @@ if(d.children) { return 0 } else { return 1 } });
                     return 'Author: '+ d.data.name  ;
                 }
                 else if(d.height==1){
-                    return 'Novel: '+d.data.name;
+                    return 'Novel: '+d.data.name +'\n' +'Description: '+d.data.description ;
                 }
                     return d.data.name + '\n' + d.value + " novels";
                 });
